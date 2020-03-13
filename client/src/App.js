@@ -25,7 +25,9 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <PlayerList /> 
+        <PlayerList 
+          players = {this.state.players}
+        /> 
       </div>
     )
   }
