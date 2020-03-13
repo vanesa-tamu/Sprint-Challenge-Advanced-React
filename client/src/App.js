@@ -3,7 +3,7 @@ import axios from 'axios'
 import './App.css';
 
 import PlayerList from './Components/PlayersList.js'
-
+import Darkbutton from './Components/DarkButton.js'
 
 class App extends React.Component {
   constructor(){
@@ -25,6 +25,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <h1>Soccer Stats!</h1>
+        <Darkbutton /> 
         <PlayerList 
           players = {this.state.players}
         /> 

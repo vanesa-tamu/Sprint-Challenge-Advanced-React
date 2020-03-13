@@ -1,16 +1,18 @@
 import React from 'react'
 import Player from './Player.js'
-
+import Grid from '@material-ui/core/Grid'
 
 const PlayerList = (props) => {
     const { players } = props
     console.log('PL props', props)
     return (
-        <div>
+        <Grid container spacing={3}  justify='center'>
             {players.map(player => (
-                <Player player={player} key={player.id}/>
+                <Grid item key={player.id}>
+                    <Player player={player}/>
+                </Grid>
             ))}
-        </div>
+        </Grid>
     )
 }
 
