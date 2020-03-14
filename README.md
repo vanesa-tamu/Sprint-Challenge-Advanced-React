@@ -22,10 +22,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Why would you use class component over function components (removing hooks from the question)?
+- [ ] Why would you use class component over function components (removing hooks from the question)? `The class component allows us to use some methods on the React.Component base class. Thus, allowing us to use some of the methods to tap into the Component Lifecyle.` 
 - [ ] Name three lifecycle methods and their purposes.
+        `componentDidUpdate: Is nvoked immediately after updating occurs. This method is not called for the initial render though. This method allows us to do network requests if one compares the current and previous props. This also allows us to  operate on the DOM when the component has been updated.`
+        `componentDidMount: is invoked immediately after a component is mounted. This is the main place where one sets state using this.setState({}). `
+        `componentWillUnmount is invoked immediately before a component is unmounted and destroyed. This allows us to perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in componentDidMount().`
 - [ ] What is the purpose of a custom hook?
+        `A custom hook allows developers to abstract away any reuasable code that involves the impementation of non-visual behavior and stateful logic`
 - [ ] Why is it important to test our apps?
+    `Testing is vital to applications since we don't want users to experience bugs that could have easily been avoided. Testing is also helpful when working with a team (either currently or across time) since it prevents code errors and is also a form of documentation for later teams. A lot of teams focus on test driven development for this reason`
 
 ## Project Set Up
 
